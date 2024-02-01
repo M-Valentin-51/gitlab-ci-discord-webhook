@@ -46,7 +46,7 @@ fi
 
 TIMESTAMP=$(date --utc +%FT%TZ)
 
-#if [ -z $LINK_ARTIFACT ] || [ $LINK_ARTIFACT = false ] ; then
+if [ -z $LINK_ARTIFACT ] || [ $LINK_ARTIFACT = false ] ; then
   WEBHOOK_DATA='{
     "avatar_url": "https://gitlab.com/favicon.png",
     "embeds": [ {
@@ -74,6 +74,8 @@ TIMESTAMP=$(date --utc +%FT%TZ)
         "timestamp": "'"$TIMESTAMP"'"
       } ]
     }'
+
+    fi
 # else
 # 	WEBHOOK_DATA='{
 # 		"avatar_url": "https://gitlab.com/favicon.png",
