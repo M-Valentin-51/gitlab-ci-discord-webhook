@@ -8,7 +8,7 @@ case $1 in
     ;;
 
   "failure" )
-    EMBED_COLOR=15158332
+    EMBED_COLOR=15999332
     STATUS_MESSAGE="Failed"
     ARTIFACT_URL="Not available"
     ;;
